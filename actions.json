@@ -14,7 +14,7 @@
                     }
                 ]
             },
-            "intent": {
+            "intent": {A
                 "name": "com.example.intents.BlinkLight",
                 "parameters": [
                     {
@@ -29,16 +29,7 @@
                 "trigger": {
                     "queryPatterns": [
                         "blink ($Speed:speed)? $SchemaOrg_Number:number times",
-                        "blink $SchemaOrg_Number:number times ($Speed:speed)?",
-                        "where is my water",
-                        "I will die if you don't give me water",
-                        "I need a glass of water",
-                        "I am thirsty",
-                        "guide me to water",
-                        "I need water",
-                        "guide me to the nearest bottle of water",
-                        "I want water",
-                        "I will die of thirst. Give me some water"
+                        "blink $SchemaOrg_Number:number times ($Speed:speed)?"
                     ]
                 }
             },
@@ -48,8 +39,7 @@
                         "items": [
                             {
                                 "simpleResponse": {
-                                    "textToSpeech": "Let me switch on your device.Okay! now turn around for about 360 degree until any motor is switched on."
-                                    
+                                    "textToSpeech": "Blinking $number times"
                                 }
                             },
                             {
